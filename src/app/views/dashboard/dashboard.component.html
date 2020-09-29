@@ -1,0 +1,14 @@
+<div class="dashboard">
+<div class="header">
+  <app-breadcrumb [breadcrumb]="menu"></app-breadcrumb>
+  <app-nav-bar class="nav-bar" [navBar]="navItem"></app-nav-bar>
+</div>
+<app-three-columns></app-three-columns>
+
+<app-map></app-map>
+<div class="graph-section">
+<app-bar-chart></app-bar-chart>
+<app-chart></app-chart>
+</div>
+<router-outlet></router-outlet>
+</div>

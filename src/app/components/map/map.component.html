@@ -1,0 +1,48 @@
+
+<div class="map-section">
+  <p class="title">Edge Customer Segmentation</p>
+  <app-list (removeOption)="removeOption($event)"></app-list>
+  <div class="map-content">
+    <div class="left-column">
+      <div class="map-title">Distribution By State</div>
+      <app-global-map [dataset]="content"></app-global-map>
+    </div>
+    <div class="right-column">
+      <div class="sub-title">Distribution By Region</div>
+      <div class="region">
+      <div class="region-item">
+        <span class="label">WESTERN AUSTRALIA</span>
+        <span class="regin-cover oragne" *ngIf="gamer">40%</span>
+        <span class="regin-cover blue" *ngIf="Iot">30%</span>
+        <span class="regin-cover purple" *ngIf="smartF">20%</span>
+        <span class="regin-cover green"  *ngIf="Medi">10%</span>
+      </div>
+      <div class="region-item">
+        <span class="label">NORTHERN TERRITORY</span>
+        <span class="regin-cover oragne" *ngIf="gamer">30%</span>
+        <span class="regin-cover  blue"  *ngIf="Iot">25%</span>
+        <span class="regin-cover  purple" *ngIf="smartF">20%</span>
+        <span class="regin-cover  green"  *ngIf="Medi">250%</span>
+      </div>
+      <div class="region-item">
+        <span class="label">QUEENSLAND</span>
+         <span class="regin-cover oragne" *ngIf="gamer">65%</span>
+         <span class="regin-cover  blue" *ngIf="Iot">20%</span>
+         <span class="regin-cover  purple" *ngIf="smartF">10%</span>
+          <span class="regin-cover green" *ngIf="Medi">5%</span>
+      </div>
+      <div class="region-item">
+        <span class="label">SOUTH AUSTRALIA</span>
+         <span class="regin-cover oragne" *ngIf="gamer">45%</span>
+         <span class="regin-cover  blue" *ngIf="Iot">25%</span>
+         <span class="regin-cover  purple" *ngIf="smartF">15%</span>
+         <span class="regin-cover  green" *ngIf="Medi">15%</span>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>

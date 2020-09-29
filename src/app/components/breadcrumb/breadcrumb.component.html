@@ -1,0 +1,8 @@
+<div class="breadcrumb" ngClass="{{layout}}">
+  <span><a routerLink="/">Home</a></span>
+
+  <span *ngFor="let item of breadcrumb">
+    <a *ngIf="item.link!=''" href="javascript:void(0)" (click)="goBack(item.link)">{{item.text}}</a>
+    <a *ngIf="item.link ===''">{{item.text}}</a>
+  </span>
+</div>

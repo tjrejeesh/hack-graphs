@@ -1,0 +1,64 @@
+<div class="overlay">
+
+<div class="overlay-content">
+  <app-breadcrumb [breadcrumb]="menu" [layout]="gamer"></app-breadcrumb>
+  <div class="content">
+    <div class="row">
+      <div class="col-6">
+       <div class="graph-bg">
+        <h3><b>Quality of Service Issues</b></h3>
+        <hr>
+        <!-- <p-chart height="300"  type="line" [data]="reliabilityData" [options]="lineOptions"></p-chart> -->
+        <app-quality-service></app-quality-service>
+       </div>
+      </div>
+      <div class="col-6 graph-second">
+        <div class="graph-bg">
+        <h3><b>Gamers Micro Segments</b></h3>
+        <hr>
+        <!-- <p-chart height="300"  type="bar" [data]="dataSource" [options]="lineOptions"></p-chart> -->
+        <app-gamer-bar-chart></app-gamer-bar-chart>
+      </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="graph-bg">
+          <h3><b>Average User Base</b></h3>
+          <hr>
+          <!-- <p-chart height="300"  type="line" [data]="lineData" [options]="curvedLineOptions"></p-chart> -->
+          <app-average-users></app-average-users>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <div class="graph-bg">
+          <h3><b>Users By Platforms</b></h3>
+          <hr>
+          <app-user-platform></app-user-platform>
+          <!-- <p-chart height="300"  type="doughnut" [data]="doughnutData" [options]="doughnutOptions"></p-chart> -->
+        </div>
+        </div>
+        <div class="col-7 graph-second">
+          <div class="graph-bg">
+          <h3><b>Live Gamers Platform By App Store</b></h3>
+          <hr>
+          <!-- <p-chart height="300"  type="line" [fillOpacity]= ".3" [data]="gameData" [options]="curvedLineOptions"></p-chart> -->
+          <app-gamer-platform></app-gamer-platform>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="graph-bg">
+          <h3><b>Average Session Length</b></h3>
+          <hr>
+          <!-- <p-chart  height="300" type="line" [data]="sessionData" [options]="lineOptions"></p-chart> -->
+          <app-avg-session></app-avg-session>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>

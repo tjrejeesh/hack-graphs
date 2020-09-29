@@ -1,0 +1,63 @@
+<div class="process-content">
+  <div class="header">
+    <span class="label">Process</span>
+      <app-nav-bar
+          class="nav-bar"
+          [navBar]="navItem"
+      ></app-nav-bar>
+  </div>
+  <div class="row">
+    <div class="hero-image">
+      <div class="table-parent">
+        <div class="heading-parent">
+          <span class="cluster-text">Cluster</span>
+          <span class="bandwidth-text">Bandwidth range</span>
+        </div>
+        <div class="first-parent">
+          <input type="text" class="process-input1" name="demo-min" readonly placeholder="Geographic">
+          <input type="text" class="process-input2" name="demo-min" placeholder="Min">
+          <input type="text" class="process-input3" name="demo-min" placeholder="Max">
+          <input type="text" class="process-input4" name="demo-min" placeholder="Qos">
+        </div>
+        <div class="second-parent">
+          <input type="text" class="process-input1" name="demo-min" readonly placeholder="Demographic">
+          <input type="text" class="process-input2" name="demo-min" placeholder="Min">
+          <input type="text" class="process-input3" name="demo-min" placeholder="Max">
+          <input type="text" class="process-input4" name="demo-min" placeholder="Qos">
+        </div>
+        <div class="third-parent">
+          <input type="text" class="process-input1" name="demo-min" readonly readonly placeholder="Kind of services">
+          <input type="text" class="process-input2" name="demo-min" placeholder="Min">
+          <input type="text" class="process-input3" name="demo-min" placeholder="Max">
+          <input type="text" class="process-input4" name="demo-min" placeholder="Qos">
+        </div>
+        <div class="fourth-parent">
+          <input type="text" class="process-input1" name="demo-min" readonly placeholder="Preferences">
+          <input type="text" class="process-input2" name="demo-min" placeholder="Min">
+          <input type="text" class="process-input3" name="demo-min" placeholder="Max">
+          <input type="text" class="process-input4" name="demo-min" placeholder="Qos">
+        </div>
+        <div class="fifth-parent">
+          <input type="text" class="process-input1" name="demo-min" readonly placeholder="Devices">
+          <input type="text" class="process-input2" name="demo-min" placeholder="Min">
+          <input type="text" class="process-input3" name="demo-min" placeholder="Max">
+          <input type="text" class="process-input4" name="demo-min" placeholder="Qos">
+        </div>
+      </div>
+      <div class="hero-text">
+        <div class="click-position" (click)="gotoOutput()"></div>
+      </div>
+    </div>
+    <div *ngIf="graphFlag" class="graph-image">
+      <div class="geo-min" id="outputGraph">
+
+      </div>
+    </div>
+  </div>
+</div>
+<div
+    class="component-loading"
+    *ngIf="loading"
+>
+    <img src="../assets/img/radial-lightx2-2Y5eG.gif">
+</div>
