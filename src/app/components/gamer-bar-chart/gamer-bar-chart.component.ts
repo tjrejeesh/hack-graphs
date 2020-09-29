@@ -39,7 +39,7 @@ export class GamerBarChartComponent implements OnInit {
         data: [1.12, 1.45, 1.00, 1.92]
       }],
       xAxis: {
-        categories: ['Gameing console', 'Computer (laptop or desktop)', 'AR/VR', 'Mobile Phone' ],
+        categories: ['Gaming console', 'Computer (laptop or desktop)', 'AR/VR', 'Mobile Phone' ],
         gridLineWidth: 1,
         minPadding: 0.05,
         maxPadding: 0.05

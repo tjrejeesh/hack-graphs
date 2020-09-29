@@ -35,6 +35,11 @@ export class ChartComponent implements OnInit {
       credits: {
         enabled: false
       },
+      tooltip: {
+        shared: false,
+        valuePrefix: 'AUD '
+
+      },
       series: [
         {
           fillColor: {
@@ -44,6 +49,7 @@ export class ChartComponent implements OnInit {
               [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get('rgba')]
             ]
           },
+          enableMouseTracking: false,
           name: 'Gamers',
           data: [0, 2000, 2200, 2600, 3000, {
             marker: {

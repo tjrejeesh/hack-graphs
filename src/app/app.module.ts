@@ -34,6 +34,7 @@ import { AverageUsersComponent } from './components/average-users/average-users.
 import { GamerPlatformComponent } from './components/gamer-platform/gamer-platform.component';
 import { AvgSessionComponent } from './components/avg-session/avg-session.component';
 import { UserPlatformComponent } from './components/user-platform/user-platform.component';
+import { CudtomerComponent } from './components/cudtomer/cudtomer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,8 @@ import { UserPlatformComponent } from './components/user-platform/user-platform.
     AverageUsersComponent,
     GamerPlatformComponent,
     AvgSessionComponent,
-    UserPlatformComponent
+    UserPlatformComponent,
+    CudtomerComponent
   ],
   imports: [
     BrowserModule,
