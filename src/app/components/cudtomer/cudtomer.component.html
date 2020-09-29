@@ -1,1 +1,94 @@
-<p>cudtomer works!</p>
+<div class="customer-attr">
+  <div class="title">{{title}}</div>
+<form
+    [formGroup]="customerForm"
+    novalidate
+    (ngSubmit)="getCustomerDetails()"
+>
+<div class="form-content">
+    <div class="form-group">
+        <label>Customer_ID:</label>
+        <input
+            class="form-control"
+            formControlName="name"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>Avg. data usage per day (GB):</label>
+        <input
+            class="form-control"
+            formControlName="address"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>Network type:</label>
+        <input
+            class="form-control"
+            formControlName="network"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>Browsing Time:</label>
+        <input
+            class="form-control"
+            formControlName="time"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>Mobile device (#):</label>
+        <input
+            class="form-control"
+            formControlName="device"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>Streaming time (mins):</label>
+        <input
+            class="form-control"
+            formControlName="streaming"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+        <label>User type:</label>
+        <input
+            class="form-control"
+            formControlName="userType"
+            type="text"
+        >
+    </div>
+    <div class="form-group">
+    <button
+    type="submit"
+    [disabled]="customerForm.pristine || customerForm.invalid"
+    class="btn btn-success"
+>
+    Get AI based Customer Segmentation
+</button>
+</div>
+
+  </div>
+</form>
+<div
+    *ngIf="showgroup"
+    class="customer-details"
+>
+    This Customer belongs to
+    <span [ngClass]="customerGroup">"{{customerGroup}}"</span>
+    Customer Segment
+</div>
+<div
+    class="component-loading"
+    *ngIf="loading"
+>
+    <img src="../assets/img/radial-lightx2-2Y5eG.gif">
+</div>
+
+
+
+</div>

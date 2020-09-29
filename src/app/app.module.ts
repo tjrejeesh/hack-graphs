@@ -35,6 +35,7 @@ import { GamerPlatformComponent } from './components/gamer-platform/gamer-platfo
 import { AvgSessionComponent } from './components/avg-session/avg-session.component';
 import { UserPlatformComponent } from './components/user-platform/user-platform.component';
 import { CudtomerComponent } from './components/cudtomer/cudtomer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +77,8 @@ import { CudtomerComponent } from './components/cudtomer/cudtomer.component';
     HighchartsChartModule,
     ChartModule,
     DxMapModule,
-    CheckboxModule
+    CheckboxModule,
+    ReactiveFormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
