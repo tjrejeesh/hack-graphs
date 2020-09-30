@@ -31,7 +31,7 @@ export class QualityServiceComponent implements OnInit {
         type: 'area'
       },
       xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        categories: ['Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19', 'Oct-19', 'Nov-19', 'Dec-19'],
       },
       yAxis: {
         title: {
@@ -88,17 +88,24 @@ export class QualityServiceComponent implements OnInit {
         data: [100, 98, 97, 100, 100, 100, 96, 99, 99, 100, 98, 100],
       }],
       tooltip: {
+        // shared: true,
         formatter: function () {
           const baseline = [78, 79, 77, 80, 80, 80, 79, 76, 80, 76, 78, 80];
           if (this.series.name === 'Success') {
-            return this.y;
+            const v = this.y;
+            const x = this.x;
+            return x + ' ' + this.series.name + ' ' + v + ' ' + '%';
           } else {
             const diff = baseline[this.series.data.indexOf( this.point )];
             console.log(diff);
             if (this.y >= diff) {
-              return this.y - baseline[this.series.data.indexOf( this.point )];
+              const v = this.y - baseline[this.series.data.indexOf( this.point )];
+              const x = this.x;
+              return x + ' ' +this.series.name + ' ' + v + ' ' + '%';
             } else {
-              return baseline[this.series.data.indexOf( this.point )] - this.y;
+              const v = baseline[this.series.data.indexOf( this.point )] - this.y;
+              const x = this.x;
+              return x + ' ' + this.series.name + ' ' + v + ' ' + '%' ;
             }
           }
         }

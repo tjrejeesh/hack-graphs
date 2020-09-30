@@ -7,7 +7,25 @@
 
 <app-map></app-map>
 <div class="graph-section">
-<app-bar-chart></app-bar-chart>
+  <div class="bar-containers">
+    <div class="label-section">Edge Customer Segmentation</div>
+    <select>
+      <option>Last 6 Months</option>
+      <option>Last 1 Year</option>
+    </select>
+
+  </div>
+  <div class="two-column">
+
+    <div class="left-column">
+      <app-bar-chart></app-bar-chart>
+    </div>
+    <div class="right-column">
+      <app-revenue></app-revenue>
+    </div>
+  </div>
+
+
 <app-chart></app-chart>
 </div>
 <router-outlet></router-outlet>

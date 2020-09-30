@@ -129,7 +129,7 @@ export class GamerComponent implements OnInit {
       }]
   };
   sessionData = {
-    labels: ['JAN-20', 'FEB-20', 'MAR-20', 'APR-20', 'MAY-20', 'JUN-20', 'JUL-20', 'AUG-20', 'SEP-20'],
+    labels: ['JAN-19', 'FEB-19', 'MAR-19', 'APR-19', 'MAY-19', 'JUN-19', 'JUL-19', 'AUG-19', 'SEP-19'],
     datasets: [
       {
         label: 'LTE',

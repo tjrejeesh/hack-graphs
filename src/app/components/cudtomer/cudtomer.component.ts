@@ -17,13 +17,13 @@ export class CudtomerComponent {
  }
   createForm() {
    this.customerForm = this.fb.group({
-      name: [''],
-      address: [''],
-      network: [''],
-      time: [''],
-      device: [''],
-      streaming: [''],
-      userType: ['']
+      name: ['1000098'],
+      address: ['3267'],
+      network: '4G',
+      time: ['346'],
+      device: ['4'],
+      streaming: 'Evening',
+      userType: 'Consumer'
    });
  }
  getCustomerDetails() {

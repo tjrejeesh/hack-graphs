@@ -36,6 +36,7 @@ import { AvgSessionComponent } from './components/avg-session/avg-session.compon
 import { UserPlatformComponent } from './components/user-platform/user-platform.component';
 import { CudtomerComponent } from './components/cudtomer/cudtomer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RevenueComponent } from './components/revenue/revenue.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     GamerPlatformComponent,
     AvgSessionComponent,
     UserPlatformComponent,
-    CudtomerComponent
+    CudtomerComponent,
+    RevenueComponent
   ],
   imports: [
     BrowserModule,
