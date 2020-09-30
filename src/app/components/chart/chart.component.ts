@@ -118,7 +118,7 @@ export class ChartComponent implements OnInit {
           }, 59150, 62120, 68060, 71030, 74000, 81425]
         }],
       xAxis: {
-        categories: ['Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19', 'Oct-19', 'Nov-19', 'Dec-19'],
+        categories: ['Jan-21', 'Feb-21', 'Mar-21', 'Apr-21', 'May-21', 'Jun-21', 'Jul-21', 'Aug-21', 'Sep-21', 'Oct-21', 'Nov-21', 'Dec-21'],
         gridLineWidth: 1,
         minPadding: 0.05,
         maxPadding: 0.05

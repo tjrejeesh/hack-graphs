@@ -34,7 +34,7 @@ export class RevenueComponent implements OnInit {
       { color: '#aaff99',
         showInLegend: false,
         name: 'Revenue',
-        data: [{y: 800000, color: '#aaff99'}, {y: 600000, color: '#50B432'}, {y: 400000, color: '#ED561B'}, {y:650000, color:'#64E572'}, {y:60000, color:'#FF9655'}]
+        data: [{y: 800000, color: '#000080'}, {y: 600000, color: 'rgb(80, 180, 50)'}, {y: 400000, color: '#FF4500'}, {y: 650000, color: '#800000'}, {y: 450000, color: '#FF1493'}]
       }],
       tooltip: {
         valueSuffix: ' AUD'
@@ -47,7 +47,7 @@ export class RevenueComponent implements OnInit {
       },
       yAxis: {
         title: {
-          text: 'Revenue'
+          text: 'REVENUE'
         },
         gridLineWidth: 1,
       },

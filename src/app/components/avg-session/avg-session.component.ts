@@ -100,7 +100,7 @@ export class AvgSessionComponent implements OnInit {
           ]
         },
         name: 'Night',
-        data: [4, 5, 5, 3, 6, 8, 6, 8, 3, 4, 9, 3],
+        data: [4, 5, 5, 3, 6, 8, 6, 8, 6, 4, 9, 7],
       }]
     };
     Highcharts.chart('avgSession', this.configObj);
