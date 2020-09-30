@@ -31,7 +31,7 @@ export class BarChartComponent implements OnInit {
       series: [
         {
         name: 'Counts',
-        data: [970031, 603934, 502503, 507177, 609658]
+        data: [{y: 970031, color: '#aaff99'}, {y: 603934, color: '#50B432'}, {y: 502503, color: '#ED561B'}, {y:507177, color:'#64E572'}, {y:609658, color:'#FF9655'}]
       }],
       xAxis: {
         categories: ['Gamers', 'IoT Industrial', 'Smart Farming', 'Medical IoT', 'Smart Home' ],

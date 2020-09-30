@@ -33,7 +33,7 @@ export class RevenueComponent implements OnInit {
       series: [
       {
         name: 'Revenue',
-        data: [800000, 600000, 400000, 650000, 60000]
+        data: [{y: 800000, color: '#aaff99'}, {y: 600000, color: '#50B432'}, {y: 400000, color: '#ED561B'}, {y:650000, color:'#64E572'}, {y:60000, color:'#FF9655'}]
       }],
       tooltip: {
         valueSuffix: ' AUD'
